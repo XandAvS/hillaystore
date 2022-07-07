@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="_imagens/favicon.ico" type="image/x-icon">
+    <title>Produtos | Hillay</title>
+</head>
+
+<body class="text-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #66019f;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img width="125" src="_imagens/logo_hillay.jpeg" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="produtos.html">PRODUTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="encomenda.html">ENCOMENDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contato.html">CONTATO</a>
+                    </li>
+                    <li class="nav-item">
+                        <A class="nav-link text-light" href="">CARRINHO (0)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row " style="background-color: #66019f;">
+            <!-- padrão de view do produto-->
+            <br>
+            <div class=" col-3"></div>
+            <div class=" col-4">
+                <!-- imagem do produto generico imagens em (826x1102)-->
+                <div class="card-group">
+                    <div class="card-body">
+                       <div>
+                        <img class="img-fluid img-thumbnail" src="_imagens/Caveira Praia.jpg" alt="" width="800px">
+                    </div>
+                    <div class="card-img text-start container-fluid" style="background-color: rebeccapurple;">
+                        <!--IMAGEM EM 500X500-->
+                        <div class="card-body" style="padding: 5px;">
+                            <button class="img-thumbnail" style="display: inline-block;"><img
+                                    src="_imagens/caveira Rock uso.jpg" alt="img 1" style="width:55px;"></button>
+                            <button class="img-thumbnail" style="display: inline-block;"><img
+                                    src="_imagens/caveira uso.jpg" alt="img 2" style="width:55px;"></button>
+                            <button class="img-thumbnail" style="display: inline-block;"><img
+                                    src="_imagens/Caveira Praia.jpg" alt="img 3" style="width:55px;"></button>
+                        </div>
+                    </div>  
+                    </div>
+                   
+                </div>
+
+            </div>
+            <div class="col-2 text-center container-fluid">
+                <!-- padrão de descrição do produto-->
+                <div class="card m-3" style="width: 18rem; background-color: rebeccapurple;">
+                    <div class="card-body">
+                        <h5 class="card-title">Meias Divertidas </h5>
+                        <h5 class="card-subtitle mb-2">R$ 000,00</h5> <!-- precebe valor do produto-->
+                        <br>
+                        <b>Quantidade</b> <!-- estoque do produto-->
+                        <div class="btn-group inline mb-4" role="group" aria-label="Basic example">
+                            <input type="button" class="btn btn-secondary" value="-">
+                            <input class="form-control text-center" type="number" name="quantidade"
+                                onchange="preencheTotalProduto()" min="0" max="<?= $tamanho['estoque'];?>" value="0">
+                            <input type="button" class="btn btn-secondary" value="+">
+                        </div>
+                        <div class="btn">
+                            <button type="button" class="btn btn-success">Comprar</button>
+                        </div>
+                        <div class="card-text">
+                            <br>
+                            <h6>Sobre o Produto</h6>
+                            <p class="card-text text-start ">
+                                - Fio 100% acrílico; <br>
+                                - Produtos de tamanhos unícos; <br>
+                                - Lavar a mão, não usar alvejantes,secagem natural na horizontal; <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3" style="width: 18rem; background-color: rebeccapurple;">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <br>
+                            <h5>Envio</h5>
+                            <p class="card-text text-center">
+                                <b>Envios com prazo de 5 dias uteis</b><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-3"></div>
+            <div class="row">
+
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="card-footer" style="background-color: rebeccapurple;">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <footer>
+                    <div class="">
+                        <h4 class="text-light">Info</h4>
+                    </div>
+                    <div class="">
+                        <h4 class="text-light">Contato</h4>
+                        <!--  <p> </p> -->
+                    </div>
+                    <div class="">
+                        <h4 class="text-light">Sobre</h4>
+                    </div>
+                </footer>
+            </div>
+            <div class="col-5">
+                <p class="text-light text-end">Contato: Contato hillay_store@gmail.com | (18) 99999-9999
+                    <br>
+                    Endereço: Rua ___________, ___ - _____________
+                    <br>
+                    Entrega em até 7 dias úteis
+                </p>
+            </div>
+            <p class="text-light text-center">© 2021 by Hugo Ribeiro - CNPJ 000000000000000000000</p>
+
+            <div class="col-1"></div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! https://www.youtube.com/watch?v=ofs9UJJ62h0 -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      -->
+
+
+
+</body>
+
+</html>

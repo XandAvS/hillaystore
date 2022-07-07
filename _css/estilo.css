@@ -1,0 +1,135 @@
+.login{
+    background-color: #8727b8;
+}
+
+
+.card{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    color: #292b2c;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+form{
+    align-items: center;
+    justify-content:  space-between;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.produto{
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+    color: #292b2c;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-weight: bolder;
+}
+.produto-2{
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+    color: #292b2c;
+    font-weight: 300;
+}
+.imagem{
+    padding: 40px;
+    margin: 40px;
+}
+.fomr{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    color: #292b2c;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #8727b8;
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+fieldset{
+    border: 3px round #66019f;
+}
+legend{
+    border: 1px solid #66019f;
+    padding: 10px;
+    text-align: center;
+    background-color: #66019f;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+    
+
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: #0089A5;
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#Voltar{
+    background-image: linear-gradient(to right,#66019f, #66019f);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit{
+    background-image: linear-gradient(to right,#66019f, #66019f);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,#66019f, #48027e);
+}
+#rounded-circle{
+    background-color: #0089A5;
+}
+
